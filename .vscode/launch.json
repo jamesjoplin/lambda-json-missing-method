@@ -1,0 +1,21 @@
+{
+   // Use IntelliSense to find out which attributes exist for C# debugging
+   // Use hover for the description of the existing attributes
+   // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+   "version": "0.2.0",
+   "configurations": [
+        // Serverless Functions
+        {
+            "name": "Lambda Json Missing Method - Lambda Test Tool",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${env:HOME}/.dotnet/tools/dotnet-lambda-test-tool-6.0",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/lambda-json-missing-method",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+    ]
+}
